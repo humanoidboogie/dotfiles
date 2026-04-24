@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# setup niri symlinks
+ln -sf -T ~/Dropbox/dotfiles/niri/config.kdl ~/.config/niri/config.kdl
+ln -sf -T ~/Dropbox/dotfiles/niri/binds.kdl ~/.config/niri/dms/binds.kdl
+
+# copy over DMS settings (symlink causes issues)
+rm -rf ~/.config/DankMaterialShell
+cp -r ~/Dropbox/dotfiles/DankMaterialShell ~/.config/DankMaterialShell
+
+# setup hyprland symlinks
+#ln -sf -T ~/Dropbox/dotfiles/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+#ln -sf -T ~/Dropbox/dotfiles/hypr/binds.conf ~/.config/hypr/dms/binds.conf
+
+# setup nvim symlinks
+rm -rf ~/.config/nvim
+ln -sf -T ~/Dropbox/dotfiles/nvim ~/.config/nvim
+
+# setup kitty symlinks
+ln -sf -T ~/Dropbox/dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
+
+# setup alacritty symlinks
+#ln -sf -T ~/Dropbox/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
