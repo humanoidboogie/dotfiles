@@ -1,18 +1,22 @@
 #!/bin/bash
 
-# setup niri dotfiles
+# niri
 rm ~/.config/niri/config.kdl
 rm ~/.config/niri/dms/binds.kdl
 stow -t ~ niri
 
-# setup DMS dotfiles
+# DMS
 rm ~/.config/DankMaterialShell/settings.json
 stow -t ~ dms
 
-# setup nvim dotfiles
+# nvim
 rm -rf ~/.config/nvim
 stow -t ~ nvim
 
-# setup kitty dotfiles
+# kitty
 rm ~/.config/kitty/kitty.conf
 stow -t ~ kitty
+
+# bashrc
+rm ~/.bashrc
+stow -t ~ bashrc
