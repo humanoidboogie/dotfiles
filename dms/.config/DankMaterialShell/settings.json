@@ -185,8 +185,8 @@
     }
   ],
   "centeringMode": "geometric",
-  "clockDateFormat": "dddd, MMMM d",
-  "lockDateFormat": "dddd, MMMM d",
+  "clockDateFormat": "ddd, d MMM",
+  "lockDateFormat": "dddd, d MMMM",
   "greeterRememberLastSession": true,
   "greeterRememberLastUser": true,
   "greeterEnableFprint": false,
@@ -211,11 +211,11 @@
   "spotlightSectionViewModes": {},
   "appDrawerSectionViewModes": {},
   "niriOverviewOverlayEnabled": true,
-  "dankLauncherV2Size": "compact",
-  "dankLauncherV2BorderEnabled": false,
+  "dankLauncherV2Size": "micro",
+  "dankLauncherV2BorderEnabled": true,
   "dankLauncherV2BorderThickness": 2,
   "dankLauncherV2BorderColor": "primary",
-  "dankLauncherV2ShowFooter": true,
+  "dankLauncherV2ShowFooter": false,
   "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": true,
   "weatherEnabled": true,
@@ -424,7 +424,10 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        "workspaceSwitcher",
+        {
+          "id": "workspaceSwitcher",
+          "enabled": true
+        },
         {
           "id": "runningApps",
           "enabled": true,
@@ -445,7 +448,15 @@
         "cpuUsage",
         "notificationButton",
         "battery",
-        "controlCenterButton"
+        {
+          "id": "controlCenterButton",
+          "enabled": true,
+          "showNetworkIcon": true,
+          "showBluetoothIcon": true,
+          "showAudioIcon": true,
+          "showVpnIcon": false,
+          "showScreenSharingIcon": true
+        }
       ],
       "spacing": 4,
       "innerPadding": 8,
@@ -543,7 +554,11 @@
   "desktopWidgetGridSettings": {},
   "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
-  "builtInPluginSettings": {},
+  "builtInPluginSettings": {
+    "dms_settings_search": {
+      "trigger": "?"
+    }
+  },
   "clipboardEnterToPaste": false,
   "launcherPluginVisibility": {},
   "launcherPluginOrder": [],
