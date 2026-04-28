@@ -27,7 +27,7 @@ binds {
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
 
     Mod+E hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
-    Mod+B hotkey-overlay-title="Open Web Browser" { spawn "helium-browser"; }
+    Mod+B hotkey-overlay-title="Open Web Browser" { spawn "waterfox"; }
     
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
