@@ -205,13 +205,6 @@
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
   "browserPickerViewMode": "grid",
-  "browserUsageHistory": {
-    "waterfox": {
-      "count": 1,
-      "lastUsed": 1777466721476,
-      "name": "Waterfox"
-    }
-  },
   "appPickerViewMode": "grid",
   "filePickerUsageHistory": {},
   "sortAppsAlphabetically": false,
