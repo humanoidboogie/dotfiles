@@ -308,6 +308,7 @@ window-rule {
 }
 window-rule {
     match app-id="^Spotify$"
+    match app-id="com.github.neithern.g4music"
     open-floating true
     default-column-width { proportion 0.75; }
     default-window-height { proportion 0.75; }
