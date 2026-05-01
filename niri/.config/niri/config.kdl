@@ -188,7 +188,7 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 environment {
-    XDG_CURRENT_DESKTOP "niri"
+XDG_CURRENT_DESKTOP "niri"
 }
 hotkey-overlay {
     skip-at-startup
@@ -278,7 +278,7 @@ window-rule {
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
     draw-border-with-background false
-    opacity 0.92
+    opacity 0.9
 }
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"

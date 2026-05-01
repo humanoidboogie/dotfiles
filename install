@@ -13,9 +13,9 @@ stow -t ~ dms
 rm -rf ~/.config/nvim
 stow -t ~ nvim
 
-# kitty
-rm ~/.config/kitty/kitty.conf
-stow -t ~ kitty
+# ghostty
+rm ~/.config/ghostty/config.ghostty
+stow -t ~ ghostty
 
 # bashrc
 rm ~/.bashrc
