@@ -14,7 +14,7 @@ rm -rf ~/.config/nvim
 stow -t ~ nvim
 
 # ghostty
-rm ~/.config/ghostty/config.ghostty
+rm ~/.config/ghostty/config
 stow -t ~ ghostty
 
 # bashrc
