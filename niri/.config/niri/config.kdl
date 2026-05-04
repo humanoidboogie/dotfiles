@@ -174,12 +174,13 @@ layout {
     }
 }
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
 overview {
+    zoom 0.25
     workspace-shadow {
-        off
+        on
     }
 }
 // Add lines like this to spawn processes at startup.
@@ -188,7 +189,11 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 environment {
-XDG_CURRENT_DESKTOP "niri"
+  XDG_CURRENT_DESKTOP "niri"
+  QT_QPA_PLATFORM "wayland"
+  ELECTRON_OZONE_PLATFORM_HINT "auto"
+  QT_QPA_PLATFORMTHEME "gtk3"
+  QT_QPA_PLATFORMTHEME_QT6 "gtk3"
 }
 hotkey-overlay {
     skip-at-startup
