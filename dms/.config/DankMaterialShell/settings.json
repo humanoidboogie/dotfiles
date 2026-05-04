@@ -348,7 +348,7 @@
   "dockMaxVisibleApps": 0,
   "dockMaxVisibleRunningApps": 0,
   "dockShowOverflowBadge": true,
-  "notificationOverlayEnabled": false,
+  "notificationOverlayEnabled": true,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
   "modalDarkenBackground": true,
@@ -369,8 +369,8 @@
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "hideBrightnessSlider": false,
-  "notificationTimeoutLow": 5000,
-  "notificationTimeoutNormal": 5000,
+  "notificationTimeoutLow": 10000,
+  "notificationTimeoutNormal": 10000,
   "notificationTimeoutCritical": 0,
   "notificationCompactMode": false,
   "notificationPopupPosition": 0,
@@ -453,7 +453,11 @@
       "centerWidgets": [
         "music",
         "clock",
-        "weather"
+        "weather",
+        {
+          "id": "dankPomodoroTimer",
+          "enabled": true
+        }
       ],
       "rightWidgets": [
         "systemTray",
