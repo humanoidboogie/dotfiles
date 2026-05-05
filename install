@@ -20,3 +20,7 @@ stow -t ~ ghostty
 # bashrc
 rm ~/.bashrc
 stow -t ~ bashrc
+
+# fish
+rm ~/.config/fish/config.fish
+stow -t ~ fish
