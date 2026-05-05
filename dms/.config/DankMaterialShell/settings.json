@@ -453,11 +453,7 @@
       "centerWidgets": [
         "music",
         "clock",
-        "weather",
-        {
-          "id": "dankPomodoroTimer",
-          "enabled": true
-        }
+        "weather"
       ],
       "rightWidgets": [
         "systemTray",
