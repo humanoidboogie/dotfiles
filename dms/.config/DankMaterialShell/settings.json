@@ -462,7 +462,11 @@
       "rightWidgets": [
         "systemTray",
         "clipboard",
-        "cpuUsage",
+        {
+          "id": "cpuUsage",
+          "enabled": true,
+          "minimumWidth": false
+        },
         "notificationButton",
         "battery",
         {
