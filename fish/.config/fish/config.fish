@@ -4,4 +4,6 @@ if status is-interactive
     alias grep='grep --color=auto'
 end
 
+fish_add_path ~/.local/bin
+
 starship init fish | source
