@@ -1,3 +1,7 @@
+local filetypes_whitelist = {
+  "markdown",
+}
+
 return {
   "okuuva/auto-save.nvim",
   version = '*',                                                     -- see https://devhints.io/semver, alternatively use '*' to use the latest tagged release
@@ -7,5 +11,8 @@ return {
     trigger_events = {                                               -- See :h events
       defer_save = { "InsertLeave", "TextChanged", "TextChangedI" }, -- vim events that trigger a deferred save (saves after `debounce_delay`)
     },
+    condition = function(buf)
+      return vim.tbl_contains(filetypes_whitelist, vim.fn.getbufvar(buf, "&filetype"))
+    end,
   },
 }
