@@ -468,11 +468,6 @@
       "rightWidgets": [
         "systemTray",
         "clipboard",
-        {
-          "id": "cpuUsage",
-          "enabled": true,
-          "minimumWidth": false
-        },
         "notificationButton",
         "battery",
         {
@@ -507,7 +502,10 @@
       "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeWidgetIcons": true,
-      "widgetPadding": 8
+      "widgetPadding": 8,
+      "widgetOutlineEnabled": false,
+      "maximizeDetection": true,
+      "removeWidgetPadding": true
     }
   ],
   "desktopClockEnabled": false,
