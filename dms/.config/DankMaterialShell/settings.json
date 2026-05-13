@@ -462,8 +462,7 @@
       ],
       "centerWidgets": [
         "music",
-        "clock",
-        "weather"
+        "clock"
       ],
       "rightWidgets": [
         "systemTray",
