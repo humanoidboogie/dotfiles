@@ -279,7 +279,7 @@
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
   "acMonitorTimeout": 0,
-  "acLockTimeout": 300,
+  "acLockTimeout": 900,
   "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
   "acProfileName": "1",
@@ -414,7 +414,7 @@
     "suspend",
     "restart"
   ],
-  "powerMenuDefaultAction": "logout",
+  "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": false,
   "customPowerActionLock": "",
   "customPowerActionLogout": "",
@@ -452,6 +452,10 @@
           "enabled": true
         },
         {
+          "id": "separator",
+          "enabled": true
+        },
+        {
           "id": "runningApps",
           "enabled": true,
           "runningAppsCompactMode": true,
@@ -461,14 +465,50 @@
         }
       ],
       "centerWidgets": [
-        "music",
-        "clock"
+        {
+          "id": "music",
+          "enabled": true
+        },
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
+        {
+          "id": "spacer",
+          "enabled": true,
+          "size": 5
+        },
+        {
+          "id": "weather",
+          "enabled": true
+        }
       ],
       "rightWidgets": [
-        "systemTray",
-        "clipboard",
-        "notificationButton",
-        "battery",
+        {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
+        {
+          "id": "clipboard",
+          "enabled": true
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "separator",
+          "enabled": true
+        },
         {
           "id": "controlCenterButton",
           "enabled": true,
