@@ -1,8 +1,15 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "customThemeFile": "",
-  "registryThemeVariants": {},
+  "customThemeFile": "/home/humanoid/.config/DankMaterialShell/themes/catppuccin/theme.json",
+  "registryThemeVariants": {
+    "catppuccin": {
+      "dark": {
+        "flavor": "mocha",
+        "accent": "green"
+      }
+    }
+  },
   "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
@@ -503,10 +510,10 @@
         }
       ],
       "spacing": 4,
-      "innerPadding": 4,
+      "innerPadding": 8,
       "bottomGap": 0,
-      "transparency": 1,
-      "widgetTransparency": 1,
+      "transparency": 0,
+      "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": false,
