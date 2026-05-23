@@ -1,3 +1,3 @@
 return {
-    "dimfeld/section-wordcount.nvim",
+    "humanoidboogie/section-wordcount.nvim",
 }
