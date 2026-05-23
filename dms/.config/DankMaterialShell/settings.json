@@ -509,14 +509,14 @@
           "showScreenSharingIcon": true
         }
       ],
-      "spacing": 4,
-      "innerPadding": 8,
+      "spacing": 0,
+      "innerPadding": 4,
       "bottomGap": 0,
       "transparency": 1,
       "widgetTransparency": 1,
-      "squareCorners": false,
+      "squareCorners": true,
       "noBackground": false,
-      "gothCornersEnabled": false,
+      "gothCornersEnabled": true,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
       "borderEnabled": false,
