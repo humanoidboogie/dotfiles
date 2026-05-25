@@ -9,6 +9,13 @@ stow -t ~ niri
 rm ~/.config/DankMaterialShell/settings.json
 stow -t ~ dms
 
+# check if nvim is already a symlink and remove accordingly
+if [ -L "~/.config/nvim" ]; then
+  rm ~/.config/nvim
+else
+  rm -rf ~/.config/nvim
+fi
+
 # nvim
 rm -rf ~/.config/nvim
 stow -t ~ nvim
