@@ -227,6 +227,11 @@
       "count": 1,
       "lastUsed": 1777759742235,
       "name": "Waterfox"
+    },
+    "firefox": {
+      "count": 1,
+      "lastUsed": 1779731099179,
+      "name": "Firefox"
     }
   },
   "appPickerViewMode": "grid",

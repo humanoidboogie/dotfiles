@@ -270,7 +270,7 @@ window-rule {
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
 }
-window-rule {
+/-window-rule {
     match app-id=r#"^org\.gnome\.Nautilus$"#
     open-floating true
     default-column-width { proportion 0.75; }
