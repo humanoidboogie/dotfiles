@@ -258,26 +258,11 @@ window-rule {
     open-floating true
 }
 window-rule {
-    match app-id=r#"waterfox$"# title="^Picture-in-Picture$"
-    match app-id=r#"waterfox$"# title="^Library$"
-    open-floating true
-}
-window-rule {
-    match app-id=r#"librewolf$"# title="^Picture-in-Picture$"
-    match app-id=r#"librewolf$"# title="^Library$"
-    open-floating true
-}
-window-rule {
-    match app-id=r#"zen$"# title="^Picture-in-Picture$"
-    match app-id=r#"zen$"# title="^Library$"
-    open-floating true
-}
-window-rule {
     match app-id=r#"^steam$"# title="^Steam Settings$"
     match app-id=r#"^steam$"# title="^Friends List$"
     open-floating true
 }
-window-rule {
+/-window-rule {
     match app-id="^Spotify$"
     match app-id="com.github.neithern.g4music"
     match app-id="ca.edestcroix.Recordbox"
