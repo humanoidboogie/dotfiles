@@ -28,6 +28,8 @@ binds {
 
     Mod+E hotkey-overlay-title="Open File Browser" { spawn "nautilus"; }
     Mod+B hotkey-overlay-title="Open Web Browser" { spawn "firefox"; }
+    Mod+S hotkey-overlay-title="Open Spotify" { spawn "spotify"; }
+    Mod+P hotkey-overlay-title="Open Pacseek" { spawn "ghostty" "-e" "pacseek"; }
     
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
@@ -63,12 +65,12 @@ binds {
 		XF86AudioNext allow-when-locked=true {
 		    spawn "dms" "ipc" "call" "mpris" "next";
 		}
-        Ctrl+XF86AudioRaiseVolume allow-when-locked=true {
-            spawn "dms" "ipc" "call" "mpris" "increment" "3";
-        }
-        Ctrl+XF86AudioLowerVolume allow-when-locked=true {
-            spawn "dms" "ipc" "call" "mpris" "decrement" "3";
-        }
+    Ctrl+XF86AudioRaiseVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "mpris" "increment" "3";
+    }
+    Ctrl+XF86AudioLowerVolume allow-when-locked=true {
+        spawn "dms" "ipc" "call" "mpris" "decrement" "3";
+    }
 
     // === Brightness Controls ===
     XF86MonBrightnessUp allow-when-locked=true {

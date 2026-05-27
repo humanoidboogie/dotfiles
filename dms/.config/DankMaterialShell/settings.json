@@ -464,6 +464,22 @@
           "enabled": true
         },
         {
+          "id": "cpuUsage",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
+          "id": "cpuTemp",
+          "enabled": true,
+          "minimumWidth": true
+        },
+        {
+          "id": "gpuTemp",
+          "enabled": true,
+          "selectedGpuIndex": 0,
+          "pciId": "10de:2786"
+        },
+        {
           "id": "runningApps",
           "enabled": true,
           "runningAppsCompactMode": true,
@@ -475,7 +491,8 @@
       "centerWidgets": [
         {
           "id": "music",
-          "enabled": true
+          "enabled": true,
+          "mediaSize": 3
         },
         {
           "id": "clock",
@@ -610,7 +627,11 @@
   ],
   "systemMonitorVariants": [],
   "desktopWidgetPositions": {},
-  "desktopWidgetGridSettings": {},
+  "desktopWidgetGridSettings": {
+    "DP-2": {
+      "enabled": true
+    }
+  },
   "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
