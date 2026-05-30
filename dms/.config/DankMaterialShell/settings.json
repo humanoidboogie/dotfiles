@@ -145,10 +145,10 @@
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": false,
+  "showWorkspaceApps": true,
   "workspaceDragReorder": true,
-  "maxWorkspaceIcons": 3,
-  "workspaceAppIconSizeOffset": 0,
+  "maxWorkspaceIcons": 30,
+  "workspaceAppIconSizeOffset": 6,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
@@ -462,21 +462,12 @@
         {
           "id": "workspaceSwitcher",
           "enabled": true
-        },
-        {
-          "id": "runningApps",
-          "enabled": true,
-          "runningAppsCompactMode": true,
-          "runningAppsGroupByApp": false,
-          "runningAppsCurrentWorkspace": true,
-          "runningAppsCurrentMonitor": false
         }
       ],
       "centerWidgets": [
         {
           "id": "music",
-          "enabled": true,
-          "mediaSize": 0
+          "enabled": true
         },
         {
           "id": "clock",
