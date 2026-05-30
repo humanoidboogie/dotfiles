@@ -145,10 +145,10 @@
   "showWorkspaceName": false,
   "showWorkspacePadding": false,
   "workspaceScrolling": false,
-  "showWorkspaceApps": true,
+  "showWorkspaceApps": false,
   "workspaceDragReorder": true,
   "maxWorkspaceIcons": 30,
-  "workspaceAppIconSizeOffset": 6,
+  "workspaceAppIconSizeOffset": 0,
   "groupWorkspaceApps": true,
   "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
@@ -462,6 +462,14 @@
         {
           "id": "workspaceSwitcher",
           "enabled": true
+        },
+        {
+          "id": "runningApps",
+          "enabled": true,
+          "runningAppsCompactMode": true,
+          "runningAppsGroupByApp": false,
+          "runningAppsCurrentWorkspace": true,
+          "runningAppsCurrentMonitor": false
         }
       ],
       "centerWidgets": [
