@@ -144,6 +144,9 @@ layer-rule {
     match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
+layer-rule {
+    opacity 0.9
+}
 overview {
     zoom 0.25
     workspace-shadow {
@@ -205,6 +208,9 @@ animations {
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 window-rule {
+    opacity 0.9
+}
+window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
     // You can get away with just app-id="wezterm" if you want.
@@ -250,7 +256,6 @@ window-rule {
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
     draw-border-with-background false
-    opacity 0.9
 }
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
