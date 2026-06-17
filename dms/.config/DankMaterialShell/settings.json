@@ -395,7 +395,7 @@
   "notificationTimeoutNormal": 10000,
   "notificationTimeoutCritical": 0,
   "notificationCompactMode": false,
-  "notificationPopupPosition": 0,
+  "notificationPopupPosition": -1,
   "notificationAnimationSpeed": 1,
   "notificationCustomAnimationDuration": 400,
   "notificationHistoryEnabled": true,
@@ -483,6 +483,10 @@
           "clockCompactMode": false
         },
         {
+          "id": "timer",
+          "enabled": true
+        },
+        {
           "id": "weather",
           "enabled": true
         }
@@ -502,6 +506,10 @@
         },
         {
           "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "systemUpdate",
           "enabled": true
         },
         {
