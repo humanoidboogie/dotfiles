@@ -540,10 +540,12 @@
       "popupGapsAuto": true,
       "popupGapsManual": 4,
       "maximizeWidgetIcons": true,
-      "widgetPadding": 12,
+      "widgetPadding": 8,
       "widgetOutlineEnabled": false,
       "maximizeDetection": true,
-      "removeWidgetPadding": false
+      "removeWidgetPadding": false,
+      "shadowIntensity": 0,
+      "shadowColorMode": "surface"
     }
   ],
   "desktopClockEnabled": false,
