@@ -211,7 +211,7 @@
     }
   ],
   "centeringMode": "geometric",
-  "clockDateFormat": "ddd, d MMM",
+  "clockDateFormat": "dddd, d MMMM",
   "lockDateFormat": "dddd, d MMMM",
   "greeterRememberLastSession": true,
   "greeterRememberLastUser": true,
@@ -488,6 +488,10 @@
         },
         {
           "id": "dankPomodoroTimer",
+          "enabled": true
+        },
+        {
+          "id": "weather",
           "enabled": true
         }
       ],
