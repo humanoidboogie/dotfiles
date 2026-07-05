@@ -513,6 +513,10 @@
           "enabled": true
         },
         {
+          "id": "systemUpdate",
+          "enabled": true
+        },
+        {
           "id": "controlCenterButton",
           "enabled": true,
           "showNetworkIcon": true,
