@@ -483,15 +483,11 @@
           "clockCompactMode": false
         },
         {
-          "id": "timer",
-          "enabled": true
-        },
-        {
-          "id": "dankPomodoroTimer",
-          "enabled": true
-        },
-        {
           "id": "weather",
+          "enabled": true
+        },
+        {
+          "id": "timer",
           "enabled": true
         }
       ],
