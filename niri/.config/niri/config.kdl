@@ -1,6 +1,7 @@
+// This config is in the KDL format: https://kdl.dev
+// "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
-
 config-notification {
     disable-failed
 }
@@ -27,12 +28,7 @@ input {
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
-            
-            //layout "us,gb"
-            //options "grp:alt_space_toggle,compose:ralt,ctrl:nocaps"
         }
-
-        //track-layout "global"
 
         // Enable numlock on startup, omitting this setting disables it.
         numlock
@@ -59,7 +55,7 @@ input {
         // off
         // natural-scroll
         // accel-speed 0.2
-        accel-profile "flat"
+        // accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -79,9 +75,19 @@ input {
 
     // Focus windows and outputs automatically when moving the mouse into them.
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
-    //focus-follows-mouse max-scroll-amount="0%"
+    // focus-follows-mouse max-scroll-amount="0%"
 }
-
+// You can configure outputs by their name, which you can find
+// by running `niri msg outputs` while inside a niri instance.
+// The built-in laptop monitor is usually called "eDP-1".
+// Find more information on the wiki:
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
+// Remember to uncomment the node by removing "/-"!
+/-output "eDP-2" {
+    mode "2560x1600@239.998993"
+    position x=2560 y=0
+    variable-refresh-rate
+}
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -95,21 +101,21 @@ layout {
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
     center-focused-column "never"
-    //always-center-single-column
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
         // Proportion sets the width as a fraction of the output width, taking gaps into account.
         // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
         // The default preset widths are 1/3, 1/2 and 2/3 of the output.
+        proportion 0.33333
         proportion 0.5
-        proportion 1.0
+        proportion 0.66667
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
     }
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
     // You can change the default width of the new windows.
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
     // By default focus ring and border are rendered as a solid background rectangle
@@ -139,13 +145,12 @@ layout {
     }
 }
 layer-rule {
-    match namespace="dms:blurwallpaper"
+    match namespace="^quickshell$"
     place-within-backdrop true
 }
 overview {
-    zoom 0.25
     workspace-shadow {
-        on
+        off
     }
 }
 // Add lines like this to spawn processes at startup.
@@ -153,6 +158,9 @@ overview {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
+environment {
+  XDG_CURRENT_DESKTOP "niri"
+}
 hotkey-overlay {
     skip-at-startup
 }
@@ -216,18 +224,13 @@ window-rule {
     open-floating false
 }
 window-rule {
+    match app-id=r#"^org\.gnome\.Calculator$"#
     match app-id=r#"^gnome-calculator$"#
     match app-id=r#"^galculator$"#
-    match app-id="^org.gnome.Calculator$"
     match app-id=r#"^blueman-manager$"#
+    match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
-}
-/-window-rule {
-    match app-id=r#"^org\.gnome\.Nautilus$"#
-    open-floating true
-    default-column-width { proportion 0.75; }
-    default-window-height { proportion 0.75; }
 }
 window-rule {
     match app-id=r#"^steam$"# title=r#"^notificationtoasts_\d+_desktop$"#
@@ -237,37 +240,14 @@ window-rule {
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     match app-id="Alacritty"
+    match app-id="zen"
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
-    match app-id="marktext"
-    match app-id="libreoffice-writer"
     draw-border-with-background false
-    opacity 0.9
 }
 window-rule {
-    match app-id=r#"waterfox$"# title="^Picture-in-Picture$"
-    match app-id=r#"waterfox$"# title="^Library$"
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="zoom"
-    open-floating true
-}
-window-rule {
-    match app-id=r#"^steam$"# title="^Steam Settings$"
-    match app-id=r#"^steam$"# title="^Friends List$"
-    open-floating true
-}
-/-window-rule {
-    match app-id="^Spotify$"
-    match app-id="com.github.neithern.g4music"
-    match app-id="ca.edestcroix.Recordbox"
-    open-floating true
-    default-column-width { proportion 0.75; }
-    default-window-height { proportion 0.75; }
-}
-
-// Open dms windows as floating by default
-window-rule {
-    match app-id=r#"org.quickshell$"#
-    match app-id=r#"com.danklinux.dms$"#
     open-floating true
 }
 debug {
@@ -285,10 +265,9 @@ recent-windows {
 }
 
 // Include dms files
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/alttab.kdl"
-include "dms/binds.kdl"
-include "dms/outputs.kdl"
-include "dms/cursor.kdl"
-include "dms/windowrules.kdl"
+include optional=true "dms/colors.kdl"
+include optional=true "dms/layout.kdl"
+include optional=true "dms/alttab.kdl"
+include optional=true "dms/binds.kdl"
+include optional=true "dms/outputs.kdl"
+include optional=true "dms/cursor.kdl"
