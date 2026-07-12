@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # niri
-rm ~/.config/niri/config.kdl
-rm ~/.config/niri/dms/binds.kdl
-stow -t ~ niri
+#rm ~/.config/niri/config.kdl
+#rm ~/.config/niri/dms/binds.kdl
+#stow -t ~ niri
 
 # DMS
-rm ~/.config/DankMaterialShell/settings.json
-stow -t ~ dms
+#rm ~/.config/DankMaterialShell/settings.json
+#stow -t ~ dms
 
 # check if nvim is already a symlink and remove accordingly
 if [ -L "~/.config/nvim" ]; then
@@ -27,8 +27,3 @@ stow -t ~ ghostty
 # bashrc
 rm ~/.bashrc
 stow -t ~ bashrc
-
-# fish
-mkdir ~/.config/fish
-rm ~/.config/fish/config.fish
-stow -t ~ fish

@@ -10,4 +10,4 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR=nvim
 
-exec fish
+eval "$(starship init bash)"
