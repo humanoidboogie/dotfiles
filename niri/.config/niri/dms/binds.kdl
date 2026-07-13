@@ -5,7 +5,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // === Application Launchers ===
-    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open Terminal" { 
+        spawn "ghostty";
+    }
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
@@ -18,9 +20,15 @@ binds {
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "focusOrToggle";
     }
-    Mod+E hotkey-overlay-title="File Browser" { spawn "nautilus"; }
-    Mod+B hotkey-overlay-title="Web Browser" { spawn "flatpak" "run" "net.waterfox.waterfox"; }
-    Mod+S hotkey-overlay-title="Spotify" { spawn "flatpak" "run" "com.spotify.Client"; }
+    Mod+E hotkey-overlay-title="File Browser"{
+        spawn "nautilus";
+    }
+    Mod+B hotkey-overlay-title="Web Browser" {
+        spawn "flatpak" "run" "net.waterfox.waterfox";
+    }
+    Mod+S hotkey-overlay-title="Spotify" {
+        spawn "flatpak" "run" "com.spotify.Client";
+    }
 
     Super+X hotkey-overlay-title="Power Menu: Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Mod+Comma hotkey-overlay-title="Settings" {
@@ -85,8 +93,8 @@ binds {
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
-    Mod+Shift+T { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+T { toggle-window-floating; }
+    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
     Mod+Shift+W hotkey-overlay-title="Create window rule" { spawn "dms" "ipc" "call" "window-rules" "toggle"; }
 
