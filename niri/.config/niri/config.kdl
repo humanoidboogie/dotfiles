@@ -135,13 +135,14 @@ layout {
 }
 
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
 
 overview {
+    zoom 0.25
     workspace-shadow {
-        off
+        on
     }
 }
 
@@ -155,14 +156,6 @@ hotkey-overlay {
 
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-// Apps: blur them all without xray so it looks more realistic.
-window-rule {
-  background-effect {
-    blur true
-    xray false
-  }
-}
 
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
@@ -211,7 +204,7 @@ window-rule {
     match app-id="sublime_text"
     match app-id="obsidian"
     draw-border-with-background false
-    opacity 0.8
+    opacity 0.9
 }
 window-rule {
     match app-id=r#"waterfox$"# title="^Picture-in-Picture$"
