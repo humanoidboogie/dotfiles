@@ -208,6 +208,7 @@ window-rule {
     match app-id="zen"
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
+    match app-id="sublime_text"
     draw-border-with-background false
     opacity 0.7
 }
