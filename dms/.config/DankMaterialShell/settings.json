@@ -253,7 +253,7 @@
       "type": "regex"
     }
   ],
-  "centeringMode": "index",
+  "centeringMode": "geometric",
   "clockDateFormat": "dddd, dd MMMM",
   "lockDateFormat": "",
   "greeterRememberLastSession": true,
