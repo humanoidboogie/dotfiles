@@ -170,12 +170,6 @@ window-rule {
     default-column-width {}
 }
 window-rule {
-    match app-id=r#"^org\.gnome\."#
-    draw-border-with-background false
-    geometry-corner-radius 12
-    clip-to-geometry true
-}
-window-rule {
     match app-id=r#"^gnome-control-center$"#
     match app-id=r#"^pavucontrol$"#
     match app-id=r#"^nm-connection-editor$"#
@@ -209,6 +203,8 @@ window-rule {
 window-rule {
     match app-id=r#"waterfox$"# title="^Picture-in-Picture$"
     match app-id=r#"waterfox$"# title="^Library$"
+    match app-id=r#"^steam$"# title="^Friends List"
+    match app-id=r#"^steam$"# title="^Steam Settings"
     match app-id="zoom"
     open-floating true
 }
