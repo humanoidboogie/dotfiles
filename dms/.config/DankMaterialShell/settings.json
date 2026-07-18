@@ -60,6 +60,7 @@
   "blurEnabled": false,
   "blurForegroundLayers": true,
   "blurLayerOutlineOpacity": 0.12,
+  "blurBorderEnabled": true,
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
@@ -204,9 +205,7 @@
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
-  "mediaExcludePlayers": [
-    "waterfox"
-  ],
+  "mediaExcludePlayers": [],
   "clockCompactMode": false,
   "focusedWindowCompactMode": false,
   "focusedWindowSize": 1,
@@ -326,10 +325,10 @@
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Inter Variable",
+  "fontFamily": "Adwaita Sans",
   "monoFontFamily": "Fira Code",
-  "fontWeight": 400,
-  "fontScale": 1.1,
+  "fontWeight": 500,
+  "fontScale": 1.2,
   "textRenderType": 0,
   "textRenderQuality": 0,
   "notepadUseMonospace": true,
@@ -463,6 +462,7 @@
   "notificationOverlayEnabled": false,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
+  "notificationForegroundLayers": true,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
@@ -480,6 +480,8 @@
   "lockPamPath": "",
   "lockPamInlineFprint": false,
   "lockPamInlineU2f": false,
+  "lockPamExternallyManaged": false,
+  "lockU2fPamPath": "",
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "lockScreenVideoEnabled": false,
@@ -577,7 +579,10 @@
         }
       ],
       "centerWidgets": [
-        "music",
+        {
+          "id": "music",
+          "enabled": true
+        },
         "clock",
         "weather",
         {
