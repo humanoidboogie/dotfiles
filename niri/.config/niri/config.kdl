@@ -201,6 +201,8 @@ window-rule {
     opacity 0.9
 }
 window-rule {
+    match app-id=r#"^org\.qbittorrent\.qBittorrent$"#
+    exclude title=r#"qBittorrent"#
     match app-id=r#"waterfox$"# title="^Picture-in-Picture$"
     match app-id=r#"waterfox$"# title="^Library$"
     match app-id=r#"^steam$"# title="^Friends List"
