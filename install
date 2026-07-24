@@ -32,3 +32,11 @@ stow -t ~ bashrc
 mkdir ~/.config/fish
 rm ~/.config/fish/config.fish
 stow -t ~ fish
+
+# doom emacs
+rm ~/.config/doom/config.el
+rm ~/.config/doom/init.el
+rm ~/.config/doom/packages.el
+stow -t ~ doom
+
+doom sync
