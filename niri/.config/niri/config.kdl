@@ -197,7 +197,7 @@ window-rule {
     match app-id="kitty"
     match app-id="sublime_text"
     match app-id="obsidian"
-    match app-id="Emacs"
+    match app-id="libreoffice-writer"
     draw-border-with-background false
     opacity 0.9
 }
