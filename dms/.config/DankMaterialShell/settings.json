@@ -595,6 +595,10 @@
         "systemTray",
         "clipboard",
         "notificationButton",
+        {
+          "id": "gameControllerBattery",
+          "enabled": true
+        },
         "battery",
         {
           "id": "systemUpdate",
