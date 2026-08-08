@@ -32,3 +32,7 @@ stow -t ~ bashrc
 mkdir ~/.config/fish
 rm ~/.config/fish/config.fish
 stow -t ~ fish
+
+# doom
+rm -rf ~/.config/doom
+stow -t ~ doom
