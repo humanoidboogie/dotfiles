@@ -1,19 +1,23 @@
 #!/bin/bash
 
 # niri
-rm ~/.config/niri/config.kdl
+rm -f ~/.config/niri/config.kdl
+mkdir -p ~/.config/niri
 stow -t ~ niri
 
 # Noctalia
 rm -f ~/.config/noctalia/config.toml
+mkdir -p ~/.config/noctalia
 stow -t ~ noctalia
 
 # nvim
 rm -rf ~/.config/nvim
+rm -f ~/.config/nvim
 stow -t ~ nvim
 
 # ghostty
 rm -f ~/.config/ghostty/config
+mkdir -p ~/.config/config
 stow -t ~ ghostty
 
 # bashrc
@@ -22,4 +26,5 @@ stow -t ~ bashrc
 
 # fish
 rm -f ~/.config/fish/config.fish
+mkdir -p ~/.config/fish
 stow -t ~ fish
