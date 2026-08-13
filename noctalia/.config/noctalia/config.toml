@@ -60,3 +60,6 @@ show_label = false
 
 [widget.volume]
 show_label = false
+
+[widget.clock]
+format = "%A %H:%M"
