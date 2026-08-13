@@ -24,6 +24,7 @@ auto_locate = true
 
 [osd.kinds]
 media = false
+lock_keys = false
 
 [plugins]
 enabled = [ "noctalia/timer" ]
