@@ -11,7 +11,7 @@ enabled = true
 [bar.default]
 capsule = true
 center = [ "media", "clock", "bar" ]
-end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "session" ]
 font_family = "Inter"
 margin_edge = 4
 margin_ends = 4
