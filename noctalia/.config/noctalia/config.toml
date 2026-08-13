@@ -44,6 +44,7 @@ directory = "/home/humanoid/Pictures/Wallpapers"
 
     [wallpaper.automation]
     enabled = true
+    interval_seconds = 900
 
 [widget.bar]
 show_idle_on_horizontal = false
