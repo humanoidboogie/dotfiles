@@ -1,0 +1,61 @@
+[accessibility]
+ui_scale = 1.1000000089406967
+
+[audio]
+enable_sounds = true
+sound_volume = 0.99999997764825821
+
+[backdrop]
+enabled = true
+
+[bar.default]
+capsule = true
+center = [ "media", "clock", "bar" ]
+end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
+font_family = "JetBrainsMono Nerd Font"
+margin_edge = 4
+margin_ends = 4
+scale = 1.2000000104308128
+start = [ "workspaces", "taskbar" ]
+thickness = 40
+
+[location]
+auto_locate = true
+
+[osd.kinds]
+media = false
+
+[plugins]
+enabled = [ "noctalia/timer" ]
+
+[shell]
+font_family = "JetBrainsMono Nerd Font"
+polkit_agent = true
+
+[theme]
+mode = "dark"
+source = "wallpaper"
+
+    [theme.templates]
+    builtin_ids = [ "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt", "ghostty", "starship" ]
+
+[wallpaper]
+directory = "/home/humanoid/Pictures/Wallpapers"
+
+    [wallpaper.automation]
+    enabled = true
+
+[widget.bar]
+show_idle_on_horizontal = false
+type = "noctalia/timer:bar"
+
+[widget.media]
+hide_album_art = true
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false

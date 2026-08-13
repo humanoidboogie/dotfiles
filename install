@@ -2,33 +2,24 @@
 
 # niri
 rm ~/.config/niri/config.kdl
-rm ~/.config/niri/dms/binds.kdl
 stow -t ~ niri
 
-# DMS
-rm ~/.config/DankMaterialShell/settings.json
-stow -t ~ dms
-
-# check if nvim is already a symlink and remove accordingly
-if [ -L "~/.config/nvim" ]; then
-  rm ~/.config/nvim
-else
-  rm -rf ~/.config/nvim
-fi
+# Noctalia
+rm -f ~/.config/noctalia/config.toml
+stow -t ~ noctalia
 
 # nvim
 rm -rf ~/.config/nvim
 stow -t ~ nvim
 
 # ghostty
-rm ~/.config/ghostty/config
+rm -f ~/.config/ghostty/config
 stow -t ~ ghostty
 
 # bashrc
-rm ~/.bashrc
+rm -f ~/.bashrc
 stow -t ~ bashrc
 
 # fish
-mkdir ~/.config/fish
-rm ~/.config/fish/config.fish
+rm -f ~/.config/fish/config.fish
 stow -t ~ fish
