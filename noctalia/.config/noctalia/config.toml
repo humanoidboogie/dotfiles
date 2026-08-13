@@ -12,7 +12,7 @@ enabled = true
 capsule = true
 center = [ "media", "clock", "bar" ]
 end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session" ]
-font_family = "JetBrainsMono Nerd Font"
+font_family = "Inter"
 margin_edge = 4
 margin_ends = 4
 scale = 1.2000000104308128
@@ -29,7 +29,7 @@ media = false
 enabled = [ "noctalia/timer" ]
 
 [shell]
-font_family = "JetBrainsMono Nerd Font"
+font_family = "Inter"
 polkit_agent = true
 
 [theme]
