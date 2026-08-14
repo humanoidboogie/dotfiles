@@ -10,7 +10,7 @@ enabled = true
 
 [bar.default]
 capsule = true
-center = [ "media", "clock", "bar" ]
+center = [ "media", "clock", "weather", "bar" ]
 end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "session" ]
 font_family = "Inter"
 margin_edge = 4
@@ -66,3 +66,6 @@ show_label = false
 
 [widget.clock]
 format = "%A %H:%M"
+
+[widget.weather]
+show_condition = false
