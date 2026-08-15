@@ -25,6 +25,7 @@ auto_locate = true
 [osd.kinds]
 media = false
 lock_keys = false
+volume_input = false
 
 [plugins]
 enabled = [ "noctalia/timer" ]

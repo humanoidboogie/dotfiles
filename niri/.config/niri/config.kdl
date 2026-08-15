@@ -111,6 +111,16 @@ layer-rule {
   place-within-backdrop true
 }
 
+// == Disable blur and x-ray on noctalia panel ==
+// this fixes some weird aliasing issues on rounded corners like the volume change popup
+layer-rule {
+  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  background-effect {
+    xray false
+    blur false
+  }
+}
+
 // == Overview settings ==
 overview {
     zoom 0.3
