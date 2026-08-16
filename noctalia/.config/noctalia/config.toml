@@ -70,3 +70,6 @@ format = "%A %H:%M"
 
 [widget.weather]
 show_condition = false
+
+[widget.workspaces]
+show_labels = false
