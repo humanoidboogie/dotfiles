@@ -40,7 +40,7 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "cava", "gtk3", "gtk4", "kcolorscheme", "niri", "qt", "ghostty", "starship" ]
-    community_ids = [ "papirus-icons" ]
+    community_ids = [ "papirus-icons", "obsidian" ]
 
 
 [wallpaper]
