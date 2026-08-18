@@ -10,7 +10,7 @@ enabled = true
 
 [bar.default]
 capsule = true
-center = [ "media", "clock", "weather", "bar" ]
+center = [ "media", "clock", "weather" ]
 end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "session" ]
 font_family = "Inter"
 margin_edge = 4
@@ -26,9 +26,6 @@ auto_locate = true
 media = false
 lock_keys = false
 volume_input = false
-
-[plugins]
-enabled = [ "noctalia/timer" ]
 
 [shell]
 font_family = "Inter"
@@ -66,7 +63,7 @@ show_label = false
 show_label = false
 
 [widget.clock]
-format = "%A %H:%M"
+format = "%d %B %H:%M"
 
 [widget.weather]
 show_condition = false
