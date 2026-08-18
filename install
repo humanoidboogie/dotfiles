@@ -15,10 +15,10 @@ rm -rf ~/.config/nvim
 rm -f ~/.config/nvim
 stow -t ~ nvim
 
-# ghostty
-rm -f ~/.config/ghostty/config
-mkdir -p ~/.config/ghostty
-stow -t ~ ghostty
+# kitty
+rm -f ~/.config/kitty/kitty.conf
+mkdir -p ~/.config/kitty
+stow -t ~ kitty
 
 # bashrc
 rm -f ~/.bashrc

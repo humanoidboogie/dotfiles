@@ -87,6 +87,7 @@ window-rule {
 // == Transparent windows ==
 window-rule {
     match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
     match app-id="sublime_text"
     match app-id="libreoffice-writer"
     match app-id="obsidian"
@@ -137,7 +138,7 @@ binds {
     Mod+X     { spawn-sh "noctalia msg panel-toggle session"; }
 
     // == Application shortcuts ==
-    Mod+Return { spawn "ghostty"; }
+    Mod+Return { spawn "kitty"; }
     Mod+E      { spawn "nautilus"; }
     Mod+B      { spawn "flatpak" "run" "net.waterfox.waterfox" ; }
     Mod+S      { spawn "flatpak" "run" "com.spotify.Client"; }
