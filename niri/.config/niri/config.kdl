@@ -133,15 +133,15 @@ overview {
 
 binds {
     // == Core Noctalia binds ==
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-    Mod+Comma { spawn-sh "noctalia msg settings-toggle"; }
-    Mod+X     { spawn-sh "noctalia msg panel-toggle session"; }
+    Mod+Space repeat=false { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+Comma repeat=false { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+X     repeat=false { spawn-sh "noctalia msg panel-toggle session"; }
 
     // == Application shortcuts ==
-    Mod+Return { spawn "kitty"; }
-    Mod+E      { spawn "nautilus"; }
-    Mod+B      { spawn "flatpak" "run" "net.waterfox.waterfox" ; }
-    Mod+S      { spawn "flatpak" "run" "com.spotify.Client"; }
+    Mod+Return repeat=false { spawn "kitty"; }
+    Mod+E      repeat=false { spawn "nautilus"; }
+    Mod+B      repeat=false { spawn "flatpak" "run" "net.waterfox.waterfox" ; }
+    Mod+S      repeat=false { spawn "flatpak" "run" "com.spotify.Client"; }
 
     // == Audio & Brightness ==
     XF86AudioRaiseVolume  { spawn-sh "noctalia msg volume-up"; }
@@ -161,10 +161,10 @@ binds {
 
     // == Window Management ==
     Mod+Q repeat=false { close-window; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
-    Mod+T { toggle-window-floating; }
-    Mod+Shift+T { switch-focus-between-floating-and-tiling; }
+    Mod+F repeat=false { maximize-column; }
+    Mod+Shift+F repeat=false { fullscreen-window; }
+    Mod+T repeat=false { toggle-window-floating; }
+    Mod+Shift+T repeat=false { switch-focus-between-floating-and-tiling; }
 
     // == Focus Navigation ==
     Mod+Left  { focus-column-left; }
