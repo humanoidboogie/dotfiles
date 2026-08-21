@@ -88,6 +88,9 @@ show_label = false
 [widget.clock]
 format = "%d %B %H:%M"
 
+[widget.taskbar]
+scale = 1.25
+
 [widget.weather]
 show_condition = false
 
