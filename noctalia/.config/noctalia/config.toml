@@ -50,6 +50,10 @@ volume_input = false
 font_family = "Inter"
 polkit_agent = true
 
+[shell.screenshot]
+confirm_region = true
+directory = "/home/humanoid/Pictures/Screenshots"
+
 [theme]
 mode = "dark"
 source = "wallpaper"
