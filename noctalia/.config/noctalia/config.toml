@@ -11,7 +11,7 @@ enabled = true
 [bar.default]
 capsule = true
 center = [ "media", "clock", "weather" ]
-end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "session" ]
+end = [ "tray", "notifications", "clipboard", "widget_2", "network", "bluetooth", "volume", "battery", "session" ]
 font_family = "Inter"
 margin_edge = 4
 margin_ends = 4
@@ -96,3 +96,10 @@ show_condition = false
 
 [widget.workspaces]
 show_labels = false
+
+[plugin_settings."yuuto/arch-updater"]
+auto_check_hours = 4
+
+[plugins]
+enabled = [ "yuuto/arch-updater" ]
+
