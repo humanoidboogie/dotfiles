@@ -8,4 +8,4 @@ end
 
 fish_add_path ~/.local/bin
 
-starship init fish | source
+#starship init fish | source
