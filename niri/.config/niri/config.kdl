@@ -1,6 +1,15 @@
+// == Environment variables
+environment {
+    XDG_CURRENT_DESKTOP "niri"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+}
+
 // == Input configuration, very basic overrides ==
 input {
     keyboard {
+        xkb {
+            layout "gb"
+        }
         numlock
     }
 
@@ -242,6 +251,7 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
+spawn-at-startup "dropbox" "start" "-i"
 spawn-at-startup "noctalia"
 
 include "noctalia.kdl"

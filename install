@@ -11,9 +11,9 @@ mkdir -p ~/.config/noctalia
 stow -t ~ noctalia
 
 # nvim
-rm -rf ~/.config/nvim
-rm -f ~/.config/nvim
-stow -t ~ nvim
+#rm -rf ~/.config/nvim
+#rm -f ~/.config/nvim
+#stow -t ~ nvim
 
 # kitty
 rm -f ~/.config/kitty/kitty.conf
