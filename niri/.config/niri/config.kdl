@@ -252,6 +252,7 @@ binds {
 }
 
 spawn-at-startup "dropbox" "start" "-i"
+spawn-at-startup "/usr/bin/steam" "%U" "-silent"
 spawn-at-startup "noctalia"
 
 include "noctalia.kdl"

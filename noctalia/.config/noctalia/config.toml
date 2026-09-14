@@ -60,8 +60,6 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "cava", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt", "ghostty", "starship" ]
-    community_ids = [ "papirus-icons" ]
-
 
 [wallpaper]
 directory = "/home/humanoid/Pictures/Wallpapers"
