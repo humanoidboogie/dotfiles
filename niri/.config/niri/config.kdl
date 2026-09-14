@@ -149,7 +149,7 @@ binds {
     // == Application shortcuts ==
     Mod+Return repeat=false { spawn "kitty"; }
     Mod+E      repeat=false { spawn "nautilus"; }
-    Mod+B      repeat=false { spawn "flatpak" "run" "net.waterfox.waterfox" ; }
+    Mod+B      repeat=false { spawn "firefox" ; }
     Mod+S      repeat=false { spawn "flatpak" "run" "com.spotify.Client"; }
 
     // == Audio & Brightness ==
