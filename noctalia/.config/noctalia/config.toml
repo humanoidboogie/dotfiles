@@ -99,3 +99,8 @@ show_labels = false
 
 [plugin_settings."yuuto/arch-updater"]
 auto_check_hours = 4
+
+[notification]
+layer = "overlay"
+
+
