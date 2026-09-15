@@ -4,6 +4,13 @@ environment {
     QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
+// == Cursor settings
+cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 24
+    hide-when-typing
+}
+
 // == Input configuration, very basic overrides ==
 input {
     keyboard {
