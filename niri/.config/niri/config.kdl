@@ -259,7 +259,7 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-spawn-at-startup "dropbox" "start" "-i"
+spawn-sh-at-startup "sleep 10 && dropbox start -i"
 spawn-at-startup "/usr/bin/steam" "%U" "-silent"
 spawn-at-startup "noctalia"
 
