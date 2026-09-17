@@ -84,7 +84,7 @@ show_label = false
 show_label = false
 
 [widget.clock]
-format = "%d %B %H:%M"
+format = "%H:%M ⦁ %A, %B %d"
 
 [widget.taskbar]
 scale = 1.25
