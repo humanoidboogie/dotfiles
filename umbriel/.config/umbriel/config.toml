@@ -23,7 +23,7 @@
 # ────────────────────────────────────────────────────────────────────────────
 
 [include]
-files = []                                      # Example: ["appearance.toml", "outputs.toml"]
+files = ["noctalia.toml"]                                      # Example: ["appearance.toml", "outputs.toml"]
 
 [include.optional]
 files = []                                      # Example: ["~/.config/umbriel/noctalia.toml"]
