@@ -337,11 +337,13 @@ follows_mouse = false                           # Focus on motion after scene ch
 
 # Applications and session
 "Mod+Return" = "spawn:kitty"
-"Mod+B" = "spawn:firefox"
-"Mod+E" = "spawn:nautilus"
-"Mod+S" = "spawn:flatpak run com.spotify.Client"
-"Mod" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+Q" = "window-close"
+"Mod+B"      = "spawn:firefox"
+"Mod+E"      = "spawn:nautilus"
+"Mod+S"      = "spawn:flatpak run com.spotify.Client"
+"Mod+Space"  = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Q"      = "window-close"
+"Mod+X"      = "spawn:noctalia msg panel-toggle session"
+"Mod+Comma"  = "spawn:noctalia msg settings-toggle"
 
 # Focus navigation. In overview, Mod+Up/Down retain normal layout focus, so they
 # traverse stacks in the default horizontal layout. Bare Up/Down move between
@@ -378,8 +380,8 @@ follows_mouse = false                           # Focus on motion after scene ch
 "Mod+F" = "window-toggle-maximize"
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
-"Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-consume-right"
+#"Mod+Comma" = "window-consume-left"
+#"Mod+Period" = "window-consume-right"
 "Mod+WheelUp" = "window-focus-left"
 "Mod+WheelDown" = "window-focus-right"
 
@@ -419,10 +421,10 @@ follows_mouse = false                           # Focus on motion after scene ch
 # hidden scratchpad target to the output under the pointer. The first form
 # follows `input.cursor.follows_focus`; the `-warp` form always moves the cursor.
 # Documentation: https://docs.noctalia.dev/umbriel/scratchpads/
-"Mod+Shift+Space" = "window-move-to-scratchpad"
-"Mod+Space" = "scratchpad-toggle"
-"Mod+Ctrl+Space" = "window-restore-from-scratchpad"
-"Mod+Tab" = "scratchpad-focus-next"
+#"Mod+Shift+Space" = "window-move-to-scratchpad"
+#"Mod+Space" = "scratchpad-toggle"
+#"Mod+Ctrl+Space" = "window-restore-from-scratchpad"
+#"Mod+Tab" = "scratchpad-focus-next"
 
 # Named mode recipe: uncomment the definitions above, then replace the four
 # action values with named forms such as these. Every scratchpad action needs a
@@ -552,10 +554,10 @@ blur = true
 blur_optimized = false
 
 # Noctalia settings
-[[window_rule]]
-match.app_id = "^dev.noctalia.Noctalia$"
-default_floating = true
-default_floating_size_px = { width = 1020, height = 900 }
+#[[window_rule]]
+#match.app_id = "^dev.noctalia.Noctalia$"
+#default_floating = true
+#default_floating_size_px = { width = 1020, height = 900 }
 
 # Noctalia share picker
 [[window_rule]]
