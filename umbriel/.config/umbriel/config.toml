@@ -94,6 +94,22 @@ mode = "2560x1440@165"                          # WIDTHxHEIGHT or WIDTHxHEIGHT@H
 # sdr_white = 203                               # SDR reference white in cd/m2 during HDR
 # workspaces = 5                                # Anonymous fixed positions; omit for dynamic
 # workspace_axis = "horizontal"                 # vertical or horizontal workspace arrangement
+  
+[output."BOE 0x0BCA Unknown"]
+enabled = true                                  # False removes the output but preserves its state
+mode = "2256x1504@60"                           # WIDTHxHEIGHT or WIDTHxHEIGHT@HZ
+# position = [0, 0]                             # Logical top-left; omit for automatic placement
+scale = 1.5                                     # Logical size is mode size divided by scale
+# transform = "normal"                          # normal, 90, 180, 270, or a flipped variant
+# vrr = "fullscreen"                            # disabled, always, or fullscreen
+# tearing = true                                # Permit eligible fullscreen asynchronous flips
+# direct_scanout = true                         # False forces composition on this output
+# hdr = "auto"                                  # off, on, auto, or fullscreen
+# sdr_white = 203                               # SDR reference white in cd/m2 during HDR
+# workspaces = 5                                # Anonymous fixed positions; omit for dynamic
+# workspace_axis = "horizontal"                 # vertical or horizontal workspace arrangement
+ 
+
 
 # Replace the count with ["WEB", "CHAT", "MEDIA"] for named static workspaces,
 # or with "dynamic" to state the dynamic default explicitly. A dynamic output
