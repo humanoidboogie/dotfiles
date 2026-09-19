@@ -5,6 +5,11 @@ rm -f ~/.config/niri/config.kdl
 mkdir -p ~/.config/niri
 stow -t ~ niri
 
+# umbriel
+rm -f ~/.config/umbriel/config.toml
+mkdir -p ~/.config/umbriel
+stow -t ~ umbriel
+
 # Noctalia
 rm -f ~/.config/noctalia/config.toml
 mkdir -p ~/.config/noctalia
