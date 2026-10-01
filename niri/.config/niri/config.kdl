@@ -21,9 +21,14 @@ input {
     }
 
     touchpad {
+        off
         tap
-	dwt
+	      dwt
         natural-scroll
+    }
+
+    trackball {
+        accel-profile "flat"
     }
 
     mouse {
