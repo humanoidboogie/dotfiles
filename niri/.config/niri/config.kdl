@@ -36,7 +36,7 @@ input {
 }
 
 // == Main desktop 27" monitor
-output "DP-2" {
+output "GIGA-BYTE TECHNOLOGY CO., LTD. M27Q P 22053B000789" {
     mode "2560x1440"
     scale 1
     transform "normal"
