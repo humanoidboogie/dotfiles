@@ -21,7 +21,6 @@ input {
     }
 
     touchpad {
-        off
         tap
 	      dwt
         natural-scroll
@@ -40,6 +39,14 @@ input {
 output "DP-2" {
     mode "2560x1440"
     scale 1
+    transform "normal"
+    position x=1280 y=0
+}
+
+// == Framework 13 display
+output "BOE 0x0BCA Unknown" {
+    mode "2256x1506"
+    scale 1.5
     transform "normal"
     position x=1280 y=0
 }
