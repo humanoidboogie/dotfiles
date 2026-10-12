@@ -20,10 +20,6 @@ rm -f ~/.config/kitty/kitty.conf
 mkdir -p ~/.config/kitty
 stow -t ~ kitty
 
-# bashrc
-rm -f ~/.bashrc
-stow -t ~ bashrc
-
 # fish
 rm -f ~/.config/fish/config.fish
 mkdir -p ~/.config/fish
