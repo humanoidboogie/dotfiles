@@ -6,6 +6,10 @@ if status is-interactive
     alias grep='grep --color=auto'
 end
 
+set -gx VISUAL /usr/bin/nvim
+set -gx EDITOR /usr/bin/nvim
+set -gx SUDO_EDITOR $VISUAL
+
 fish_add_path ~/.local/bin
 
 starship init fish | source
