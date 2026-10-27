@@ -258,6 +258,7 @@ disable_while_typing = true
 [layout]
 # mode = "scrolling" # "scrolling", "dwindle", "master", or "floating".
 extent_presets = [0.333, 0.5, 0.667]
+gap = 2
 
 # What a tiled window's own maximize button does: "column" fills the column,
 # "edges" fills the usable area without struts, gaps, or borders. The
