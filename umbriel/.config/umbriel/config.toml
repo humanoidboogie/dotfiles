@@ -181,6 +181,7 @@ disable_while_typing = true
 
 "Mod+B" = { action = "spawn:firefox", repeat = false }
 "Mod+E" = { action = "spawn:nautilus", repeat = false }
+"Mod+S" = { action = "spawn:flatpak run com.spotify.Client", repeat = false }
 
 # Media, volume and brightness keys from any input device, routed through the
 # Noctalia shell so its OSDs show. Safe while the session is locked.
