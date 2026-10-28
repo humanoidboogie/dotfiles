@@ -69,6 +69,9 @@ scale = 1.5
 # hdr = "auto"
 # sdr_transfer = "gamma22" # Or "srgb" for piecewise SDR decoding in HDR.
 
+[output."GIGA-BYTE TECHNOLOGY CO., LTD. M27Q P 22053B000789"]
+mode = "2560x1440@165"
+
 # ==============================================================================
 # Appearance
 # Blur uses a smaller radius than the built-in default.
