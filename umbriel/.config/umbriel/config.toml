@@ -18,6 +18,9 @@ files = []
 [include.optional]
 files = ["noctalia.toml"]
 
+[environment]
+QT_QPA_PLATFORMTHEME = "qt6ct"
+
 # ==============================================================================
 # General
 # Optional session examples. XWayland support is enabled by default.
@@ -183,6 +186,8 @@ disable_while_typing = true
 "Mod+E" = { action = "spawn:nautilus", repeat = false }
 "Mod+S" = { action = "spawn:flatpak run com.spotify.Client", repeat = false }
 
+"Mod+Comma" = "spawn:noctalia msg settings-toggle"
+
 # Media, volume and brightness keys from any input device, routed through the
 # Noctalia shell so its OSDs show. Safe while the session is locked.
 # https://docs.noctalia.dev/noctalia/compositor-settings/umbriel
@@ -219,10 +224,10 @@ disable_while_typing = true
 "Mod+F" = { action = "window-toggle-maximize", repeat = false }
 "Mod+R" = "window-cycle-primary-extent"
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
-"Mod+Comma" = "window-consume-left"
-"Mod+Period" = "window-consume-right"
-"Mod+Ctrl+Comma" = "window-consume-from-left"
-"Mod+Ctrl+Period" = "window-consume-from-right"
+#"Mod+Comma" = "window-consume-left"
+#"Mod+Period" = "window-consume-right"
+#"Mod+Ctrl+Comma" = "window-consume-from-left"
+#"Mod+Ctrl+Period" = "window-consume-from-right"
 # Needs layout.mode = "dwindle".
 # "Mod+Alt+T" = "layout-toggle-split"
 "Mod+W" = { action = "column-toggle-tabbed", repeat = false }
