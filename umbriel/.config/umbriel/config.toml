@@ -417,7 +417,7 @@ blur_optimized = false
 # Overview: https://docs.noctalia.dev/umbriel/workspaces-overview/
 # Animation: https://docs.noctalia.dev/umbriel/animation/
 [hot_corners.top_left]
-enabled = true
+enabled = false
 delay_ms = 500
 action = "overview-open"
 
