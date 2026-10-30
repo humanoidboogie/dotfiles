@@ -153,6 +153,9 @@ numlock_toggle = true
 natural_scroll = true
 disable_while_typing = true
 
+[input.mouse]
+accel_profile = "flat"
+
 # Focus can follow the pointer across tiled, floating, and pinned windows.
 #
 # [input.focus]
