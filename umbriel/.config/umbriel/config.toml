@@ -163,6 +163,10 @@ opacity = 0.85
 match.app_id = "sublime_text"
 opacity = 0.85
 
+[[window_rule]]
+match.app_id = "libreoffice-writer"
+opacity = 0.85
+
 # ==============================================================================
 # Layer rules
 # https://docs.noctalia.dev/umbriel/layer-rules/
