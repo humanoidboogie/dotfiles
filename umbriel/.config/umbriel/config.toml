@@ -11,7 +11,7 @@ files = ["noctalia.toml"]
 # General
 # https://docs.noctalia.dev/umbriel/configuration/#general
 [general]
-autostart = ["noctalia", "/usr/bin/steam %U -silent"]
+autostart = ["noctalia", "/usr/bin/steam %U -silent", "dropbox start -i"]
 show_cheatsheet = false
 
 # ==============================================================================
